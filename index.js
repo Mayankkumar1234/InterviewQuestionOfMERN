@@ -91,7 +91,85 @@
 
 //*********/ Event Propogation in Js  *****:
 //  // Event propagation is the way in which events are handled in the DOM. It consists of two phases: capturing and bubbling and targeting .
-// 1. Capturing Phase: The event starts from the root of the DOM and travels down to the target element.
-// 2. Bubbling Phase: The event starts from the target element and travels back up to the root of the DOM.
+
+
+
+
+// 1. Capturing Phase: The event starts from the Parent  of the DOM and travels down to the inner element . It is also called trickle down.
+
+// let parent = document.querySelector("#parent");
+// let child = document.querySelector("#child");
+// let grandChild = document.querySelector("#grandChild");
+
+//   parent.addEventListener("click",()=>{
+//      alert("Component One is clicked...");
+//     }, true)
+
+//   child.addEventListener("click",()=>{
+//      alert("Component two is clicked...");
+//     }, true)
+
+//   grandChild.addEventListener("click",()=>{
+//      alert("Component three is clicked...");
+//     }, true)
+
+
+
+// 2. Bubbling Phase: When an event occurs on a component, it first runs the event handler on it, then  its parent component, then  grandParent component then up to  ancestors' components. By default, all event handles through this order from center component event to outermost component event.
+
+
+// ********* Event bubling Example ***********
+
+// let parent = document.querySelector("#parent");
+// let child = document.querySelector("#child");
+// let grandChild = document.querySelector("#grandChild");
+
+//   parent.addEventListener("click",()=>{
+//      alert("Component One is clicked...");
+//     })
+
+//   child.addEventListener("click",()=>{
+//      alert("Component two is clicked...");
+//     })
+
+//   grandChild.addEventListener("click",()=>{
+//      alert("Component three is clicked...");
+//     })
+
+
+//  ******* Lexical Scope    *******
+
+// Lexical scope in JavaScript determines the accessibility of variables based on their physical location within the code. When a variable is used, the JavaScript engine first searches for it in the current scope. If not found, it looks in the outer, enclosing scope, and continues up the chain of parent scopes until it reaches the global scope. This "scope chain" is defined by the nesting of functions and blocks at the time the code is written (lexing time), not when it is executed.
+
+
+// function outerFunction(){
+//   let a =21;
+
+//   function innerFunction(){
+//     let b=22;
+//     console.log(a+b); 
+//   }
+//   innerFunction();
+// }
+// outerFunction()
+
+
+
+// Find , every , some , filter , map , reduce in Js :
+
+
+
+// parseInt() :- It is used to convert a string to an integer.  
+
+// console.log(parseInt("F78"));   // NaN
+
+// console.log([1,2,3,4,5].map(e=>{
+//   if(e>0) return ;
+
+//   return e*10;
+
+// }))
+
+// Weak Set and Weak Map :-
 
 
