@@ -229,11 +229,115 @@ var num = 500;
 
 // console.log(arr);
 
-let c = {
-  name:"Rahul",
+// let c = {
+//   name:"Mayank"
+// }
 
-}
+// let d;
+// d=c;
+// c.name="kumar";
+// console.log(d.name);
 
-let name;
-name = c;
-c.name="kumar"
+// function infiniteCurrying(val1) {
+//   return function (val2) {
+//     if (!val2) {
+//       return val1;
+//     }
+//     return infiniteCurrying(val1 + val2);
+//   };
+// }
+
+// console.log(infiniteCurrying(1)(2)(3)(4)(5)(6)());
+
+// for(let i=0;i<arr[arr.length-1];i++){
+//   if(!arr.includes(i)){
+//     console.log(i)
+//   }
+//   }
+
+// console.log(arr)
+
+//parseInt() is a built-in JavaScript function that parses a string and returns an integer. It takes two arguments: the string to parse and an optional radix, which specifies the base of the number system. If the radix is not specified, it defaults to 10
+
+//parseInt("10"); // Returns 10
+// parseInt("10", 10); // Returns 10
+// parseInt("10", 2); // Returns 2 (binary)
+// parseInt("10", 8); // Returns 8 (octal)
+// parseInt("10", 16); // Returns 16 (hexadecimal)
+// parseInt("10.5"); // Returns 10
+// parseInt("10 20 30"); // Returns 10
+// parseInt("hello"); // Returns NaN
+
+// console.log(parseInt("10"));
+
+// console.log(parseInt("1ab"))  - The string starts with a numeric character 1, which is parsed correctly.
+// - When parseInt() encounters the non-numeric characters ab, it stops parsing and returns the parsed integer value 1.
+
+//  function to remove the duplicates from the array
+
+// let arr = [1,2,3,3,4,5,5,6];
+// function removeDuplicates(arr){
+
+// }
+// console.log(removeDuplicates(arr))
+
+// let arr = ['A','B','C','D','A','A'];
+
+// console.log(arr.indexOf('A',5));
+
+// let arr = ['A','c','Q','F','E'];
+
+// arr.sort((a,b)=> a.localeCompare(b))
+
+// console.log(arr);
+
+// const arr = [[1,2],[3,4],[5,6],[7,8],[9,10]];
+
+// const arr1 = [,,,];
+
+// console.log(arr1.length)
+
+// const arr = [{
+// rollNo:1,
+// name:"Mayank"
+// },{
+// rollNo:2,
+// name:"Rohit"
+// },{
+// rollNo:3,
+// name:"kanak"
+// }]
+
+// let output = arr.filter(a=> a.rollNo>=3)
+
+// console.log(output)
+
+// console.log([1,2,3] == [1,2,3]);
+
+// console.log([] === []);
+
+// typeof arr
+
+//async await vs prmomises
+
+// let abc = 2;
+// let a = !--abc;
+// let b = !--abc;
+
+// console.log(a,b); // false true
+
+// function Sum() {
+//   console.log("abc");
+//   return 2 + 2;
+// }
+
+// function Square() {
+//   console.log("xyz");
+//   return 4 * 4;
+// }
+
+// let a = (Sum(), Square());
+// console.log(a)   --> Revise this question
+
+
+ 
