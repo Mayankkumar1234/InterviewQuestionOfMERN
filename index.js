@@ -336,24 +336,158 @@ var num = 500;
 //   return 4 * 4;
 // }
 
-// let a = (Sum(), Square());
+// let a = (Sum(), Square());  //The comma operator (,) evaluates each of its operands from left to right and returns the value of the last operand.
 // console.log(a)   --> Revise this question
 
 // Sorting an array using bubble sort
 
-let arr = [4, 5, 3, 1, 2];
+// let arr = [4, 5, 3, 1, 2];
 
-function bubbleSort(arr) {
-  for(let i=0;i<arr.length;i++){
-    for(let j= 0 ;j<arr.length-i-1;j++){
-        if(arr[j]>arr[j+1]){
-          let temp = arr[j];
-          arr[j]  = arr[j+1];
-          arr[j+1] = temp
-        }
-    }
-  }
-  return arr
-}
+// function bubbleSort(arr) {
+//   for(let i=0;i<arr.length;i++){
+//     for(let j= 0 ;j<arr.length-i-1;j++){
+//         if(arr[j]>arr[j+1]){
+//           let temp = arr[j];
+//           arr[j]  = arr[j+1];
+//           arr[j+1] = temp
+//         }
+//     }
+//   }
+//   return arr
+// }
 
-console.log(bubbleSort(arr));
+// console.log(bubbleSort(arr));
+
+// function Sum(a,b){
+//   console.log("abc");
+//   return a+b;
+// }
+
+// function printSomething(){
+//   console.log("xyz");
+// }
+
+// let a = (Sum(), printSomething());
+
+// console.log(a);
+
+// console.log(typeof []);  --> object
+
+// console.log([1,2,3] == [1,2,3])   ->Even though [1, 2, 3] looks the same on both sides, JavaScript is not comparing the content of the arrays — it's comparing their references (memory addresses).
+
+// function print() {
+//   console.log("ab");
+// }
+
+// print();
+
+// let name = "Mayank";
+
+// console.log(`Hello ${name}`)
+
+// let arr = [1,2,3,4,5];
+
+// arr.reduce((acc, curr)=>acc+curr,0);
+
+// Insertion Sort
+//   arr =[2,7 , 91 , 77 ,3];
+
+// for(let i=0;i<arr.length;i++){
+//   for(let j=0;j<=i;j++){
+//     if(arr[j] > arr[j+1]){
+//      let temp = arr[j];
+//      arr[j] = arr[j+1];
+//      arr[j+1] =temp
+//     }
+
+//   }
+// }
+
+// console.log(arr)
+
+// what are primitive datatype in js?
+
+// There are 7 primitive datatype in Js :-
+
+// - Number :- Which represent both floating point and interger. it also includes special values like infinity ,and  NaN(Not-a-Number).
+
+// typeof NaN -> Number
+
+// - String :- A string is a sequence of characters.
+// - Boolean :- A boolean can be either true or false.
+// - Undefined :- Which is a default value provided to the variable that have been declared but not been assigned a value yet.
+
+// let result;
+// console.log(result)
+
+// - Null :- It is commonly used when you have declared a variable but either do not want to assign it a value yet or it should not have a value at all..
+// let symbol = null
+
+// -Symbol :- A symbol represents a unique and immutable identifier , which is often used for object properties to avoid naming conflicts
+
+// const sym1 = Symbol("id");
+// const sym2 = Symbol("id");
+
+// console.log(sym1 === sym2)
+
+// - BigInt :- A very large value
+//  let num = 11111111112222233333333333333n
+
+// Non Primitive Data type :-
+// - Object  :- Object is a collection of key-value pairs . Object can contain other objects , functions and data types
+// typeof arr = object
+// Object is a kind of array
+// Object can contain list of array inside it..
+
+// - Array :-
+
+// - Function :- A function is a block of reusable code
+
+// Promises in js:-
+
+// function fetchData(){
+//   set
+// }
+
+// async function fetchData( ){
+
+// let data = await fetch("https://jsonplaceholder.typicode.com/posts")
+
+// return new Promise((resolve, reject)=>{
+//   setTimeout(()=>{
+//   resolve(data)
+// },0)
+// })
+// }
+
+// fetchData().then((data)=>{
+//   console.log("Data : ",data)
+// })
+// .catch(err => console.log(err))
+
+// call , apply and bind in js :-
+
+//  Why we need template literals ?
+
+// -Template literals in JavaScript are string literals that enable embedding expressions. They are enclosed by backticks (`) instead of single or double quotes and allow for multiline strings and string interpolation using ${expression} syntax.
+
+// What is javaScript , and how is it different from java?
+// - JavaScript is high-level , interpreted scripting language.
+
+// It is used for web development.
+
+//Difference :-
+
+// - Client-side vs general-purpose (server-side)
+// -
+//
+
+// Difference between null and undefinec...
+
+// Null :-  Interntionally absence of object value, often assigned by developer..
+// - Instead of writing empty object we can write
+// let obj = null -> typeof Null = object
+
+// Undefined :- Variable declared but not assigned a value.
+
+// Explain the difference between == and ===
