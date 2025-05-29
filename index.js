@@ -491,3 +491,9 @@ var num = 500;
 // Undefined :- Variable declared but not assigned a value.
 
 // Explain the difference between == and ===
+
+// Double equal to is known as equality operator and triple equal to is known as strict equality operator..
+
+
+// == It check only value
+//=== It checks the value as well as the datatype..
