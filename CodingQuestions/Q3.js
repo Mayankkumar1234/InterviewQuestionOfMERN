@@ -6,6 +6,10 @@
 // let age =21; 
 
 
-age =21;
+// age =21;
 
-console.log()
+// console.log("Value of age is :", age);  // This will print undefined
+
+// var a=100;
+
+
