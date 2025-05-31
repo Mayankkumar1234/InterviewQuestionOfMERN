@@ -1,9 +1,5 @@
-
-
 //   Callbacks , Promises and async and await in Js :-
 
-
- 
 // //# Functions in Js :-
 
 // function abcd(){
@@ -67,5 +63,15 @@
 // - Libuv is a multi-platform, open-source library that provides support for asynchronous I/O operations. Initially designed for Node.js, it is now used by various software projects. It is designed around an event-driven, asynchronous I/O model, which allows Node.js to handle many concurrent operations efficiently.
 
 // Node js is Good when it comes to serving a lots of request and connect to many client but not good at when comes to CPU intensive tasks that requires a lots of CPU computation..
+
+// Hoew to install node js in our system : Use the command node -v in terminal
+
+//  What is NPM?
+// -
+
+//  how to initialize node package ?
+// npm init -y
+
+// main is the file  from which the execution of code starts
 
 
