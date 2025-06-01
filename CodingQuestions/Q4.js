@@ -1,13 +1,13 @@
-myFun();
+// myFun();
 
-var myFun = function () {
-  console.log("First");
-};
+// var myFun = function () {
+//   console.log("First");
+// };
 
-myFun();
+// myFun();
 
-function myFun() {
-  console.log("Second");
-}
+// function myFun() {
+//   console.log("Second");
+// }
 
-myFun();
+// myFun();
