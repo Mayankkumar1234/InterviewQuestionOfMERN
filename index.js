@@ -225,7 +225,13 @@ var num = 500;
 
 // let arr = [1, 2, 3, 4, 5];
 
-// arr.splice(0, arr.length);
+// arr.splice(0, arr.length);  //(startIndex, deleteCount, option(element that you want to add), optional)
+
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5, 6];
+
+// arr.splice(0, 2, 3, 4, 5);
 
 // console.log(arr);
 
@@ -494,6 +500,200 @@ var num = 500;
 
 // Double equal to is known as equality operator and triple equal to is known as strict equality operator..
 
-
 // == It check only value
 //=== It checks the value as well as the datatype..
+
+//What is Reconciliation in React JS?
+
+// /Reconciliation in React is the process through which React updates the DOM when the state or props of a component change. It is how React compares the new virtual DOM with the previous one and efficiently determines what has changed, so it can apply the minimum number of DOM updates required.
+
+// Why is Reconciliation Needed?
+// The real DOM is slow to manipulate, and constantly re-rendering everything from scratch is inefficient. So, React uses a virtual DOM (an in-memory representation of the real DOM) and applies changes only where necessary using reconciliation.
+
+// How Reconciliation Works (Step-by-Step):
+// Component Changes: A component's state or props are updated.
+
+// New Virtual DOM Tree: React creates a new virtual DOM tree based on the updated state/props.
+
+// Diffing Algorithm: React compares the new virtual DOM with the previous one using a diffing algorithm.
+
+// Minimal Updates: React calculates the smallest number of changes needed and updates only those specific parts of the real DOM.
+
+//What Is Replication In MongoDB?
+
+// Optional Cahining
+
+// deep copy and shallow copy
+
+
+let arr1 = [1,2,3,4];
+let arr2 = [5,6,7,8];
+
+// let a=2;
+// let b=4;
+
+// a=a!=b?b:a;
+
+// b=b!=a?a:b;
+
+// console.log(a,b)
+
+// swapping of two variable without using third variable :-
+
+// a = a*b;
+// b = a/b;
+// a = a/b;
+
+// let str = "mayank kumar";
+
+// let myMap = new Map();
+
+// for(let i=0;i<str.length;i++){
+//   if(str[i] == " ") continue
+//   myMap.set(str[i],(myMap.get(str[i]) || 0) + 1)
+// }
+
+
+// console.log(myMap)
+
+
+// console.log("2" -2); ->0
+
+// let str = "mock interview";
+
+// let newArr = str.split(" ");
+
+// for(let i=0;i<newArr.length;i++){
+//   newArr[i].toUpperCase();
+// }
+
+// // newArr.join(" ");
+
+// console.log(newArr.join(" "))
+
+
+let arr = [12,400, 399, 401, 80];
+
+
+// Write a program to remove the duplicates from the array ?
+
+// function removeArray(arr){
+//   let left = 0;
+//   for(let right=1;right<arr.length;right++){
+//       if(arr[left] != arr[right]){
+//         arr[left +1 ] =  arr[right];
+//         left++;
+//       }
+//   }
+//   arr.length = left+1;
+//   return arr
+// }
+
+// // console.log(removeArray([1,2,2,3,4,5,5,5,6,6,7,7,7,8]))
+
+
+// //Porgram to  find the nth gratest element without sorting :-
+
+//   function findNthGreatest(arr){
+//    function findNthGreatest(arr, n) {
+    
+     
+//     for (let i = 1; i < n; i++) {
+       
+//         let max = Math.max(...tempArr);
+
+      
+//         let index = tempArr.indexOf(max);
+//         tempArr.splice(index, 1);
+//     }
+
+     
+//     return Math.max(...tempArr);
+// }
+
+// // Example:
+// let arr = [5, 3, 8, 1, 9, 7];
+// let n = 3;
+// console.log(`The ${n}rd greatest element is:`, findNthGreatest(arr, n));
+
+      
+//      }
+//      return temp
+//   }
+
+//   let arr = [4,1,5,3,2];
+//   findNthGreatest(arr)
+
+
+
+// //  Program to find the first ,second and third smallest element of the arry 
+
+// function merge(arr1, arr2){
+//   let i=0,j=0;
+//   let combinedArr = [];
+
+//    while(i<arr1.length && j<arr2.length){
+//       if(arr1[i]<arr2[j]){
+//          combinedArr.push(arr1[i])
+//          i++;
+//       }else{
+//         combinedArr.push(arr2[j])
+//         j++;
+//       }
+//    }
+//    while(i<arr1.length){
+//     combinedArr.push(arr1[i])
+//     i++;
+//    }
+//    while(j<arr2.length){
+//     combinedArr.push(arr2[j])
+//     j++;
+//    }
+//    return combinedArr
+// }
+
+// function findFirstThreeShortest(arr){
+
+//   if(arr.length == 1)   return arr;
+//      let midIndex = Math.floor((arr.length)/2);
+//       let left = findFirstThreeShortest(arr.slice(0, midIndex));
+//       let right = findFirstThreeShortest(arr.slice(midIndex));
+
+//      let output =   merge(left,right);
+//      return [output[0], output[1], output[2]]
+// }
+ 
+
+
+// console.log(findFirstThreeShortest([-3,-7,3,4,2,1,5,-2]))
+// // Porgram to count the frequency of each name :-
+
+
+// // let emp = ["Nitin","Amit","Sumit","Tarun", "Nitin","Nitin","Tarun"];
+
+// // function calculateFrequency(emp){
+// //   let myMap = new Map();
+
+// //   for(let i=0;i<emp.length;i++){
+// //     myMap.set(emp[i] ,(myMap.get(emp[i])|| 0) + 1)
+// //   }
+
+// //   return myMap
+// // }
+
+// // console.log(calculateFrequency(emp))
+
+
+
+//   //  * *  *  *  *  *
+//   //  *  *       *  *
+//   //  *    *  *     *
+//   //  *  *       *  *
+//   //  * *  *  *  *  *      
+
+//   // Program to print this pattern 
+  
+
+
+
+
