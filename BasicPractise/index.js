@@ -18,3 +18,11 @@ function infiniteCurry(val1) {
 }
 
 console.log(infiniteCurry(1)(2)());
+
+
+// What does promise.All method does ?
+
+
+
+// Difference between deep copy and shallow copy ?
+

@@ -525,9 +525,8 @@ var num = 500;
 
 // deep copy and shallow copy
 
-
-let arr1 = [1,2,3,4];
-let arr2 = [5,6,7,8];
+let arr1 = [1, 2, 3, 4];
+let arr2 = [5, 6, 7, 8];
 
 // let a=2;
 // let b=4;
@@ -553,9 +552,7 @@ let arr2 = [5,6,7,8];
 //   myMap.set(str[i],(myMap.get(str[i]) || 0) + 1)
 // }
 
-
 // console.log(myMap)
-
 
 // console.log("2" -2); ->0
 
@@ -570,10 +567,6 @@ let arr2 = [5,6,7,8];
 // // newArr.join(" ");
 
 // console.log(newArr.join(" "))
-
-
-let arr = [12,400, 399, 401, 80];
-
 
 // Write a program to remove the duplicates from the array ?
 
@@ -591,32 +584,28 @@ let arr = [12,400, 399, 401, 80];
 
 // // console.log(removeArray([1,2,2,3,4,5,5,5,6,6,7,7,7,8]))
 
-
 // //Porgram to  find the nth gratest element without sorting :-
 
-//   function findNthGreatest(arr){
-//    function findNthGreatest(arr, n) {
-    
-     
-//     for (let i = 1; i < n; i++) {
-       
-//         let max = Math.max(...tempArr);
+// function findNthGreatest(arr, n) {
+//   let tempArr = [...arr];
+//   let newArr = [];
+//   for (let i = 0; i < n; i++) {
+//     let maxElem = Math.max(...tempArr);
 
-      
-//         let index = tempArr.indexOf(max);
-//         tempArr.splice(index, 1);
-//     }
-
-     
-//     return Math.max(...tempArr);
+//     // newArr.push(maxElem);
+//     console.log(maxElem)
+//     let idx = tempArr.indexOf(maxElem);
+//    console.log( arr.splice(idx, 1));
+//   }
+//   console.log(newArr);
 // }
 
 // // Example:
 // let arr = [5, 3, 8, 1, 9, 7];
+
 // let n = 3;
 // console.log(`The ${n}rd greatest element is:`, findNthGreatest(arr, n));
 
-      
 //      }
 //      return temp
 //   }
@@ -624,9 +613,7 @@ let arr = [12,400, 399, 401, 80];
 //   let arr = [4,1,5,3,2];
 //   findNthGreatest(arr)
 
-
-
-// //  Program to find the first ,second and third smallest element of the arry 
+// //  Program to find the first ,second and third smallest element of the arry
 
 // function merge(arr1, arr2){
 //   let i=0,j=0;
@@ -662,12 +649,10 @@ let arr = [12,400, 399, 401, 80];
 //      let output =   merge(left,right);
 //      return [output[0], output[1], output[2]]
 // }
- 
-
 
 // console.log(findFirstThreeShortest([-3,-7,3,4,2,1,5,-2]))
-// // Porgram to count the frequency of each name :-
 
+// // Porgram to count the frequency of each name :-
 
 // // let emp = ["Nitin","Amit","Sumit","Tarun", "Nitin","Nitin","Tarun"];
 
@@ -683,17 +668,32 @@ let arr = [12,400, 399, 401, 80];
 
 // // console.log(calculateFrequency(emp))
 
-
-
 //   //  * *  *  *  *  *
 //   //  *  *       *  *
 //   //  *    *  *     *
 //   //  *  *       *  *
-//   //  * *  *  *  *  *      
+//   //  * *  *  *  *  *
 
-//   // Program to print this pattern 
-  
-
+//   // Program to print this pattern
 
 
+// Program to find the nth greatest element in the array without sorting ?
 
+
+function findNthGreatest(arr, n){
+ let newArr = [...arr];
+ let myArr = [];
+
+ for(let i=0;i<n;i++){
+  let maxElem =  Math.max(...newArr);
+  let idx = newArr.indexOf(maxElem);
+  newArr.splice(idx, 1);
+    myArr.unshift(maxElem)
+ }
+ return myArr[0]
+}
+
+let arr = [5,4,3,1,2,2,3,3];
+console.log(findNthGreatest(arr,5));
+
+// console.log(Math.max(...arr));

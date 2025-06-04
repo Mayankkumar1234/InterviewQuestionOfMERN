@@ -1,0 +1,3 @@
+
+
+Best way to manage user session : We can use tokens to check the authenticity of the user instead of accessing the database to access userId and Password . We can use the localStorage and store the token there...
