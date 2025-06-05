@@ -668,32 +668,71 @@ let arr2 = [5, 6, 7, 8];
 
 // // console.log(calculateFrequency(emp))
 
-//   //  * *  *  *  *  *
-//   //  *  *       *  *
-//   //  *    *  *     *
-//   //  *  *       *  *
-//   //  * *  *  *  *  *
-
 //   // Program to print this pattern
-
 
 // Program to find the nth greatest element in the array without sorting ?
 
+// function findNthGreatest(arr, n){
+//  let newArr = [...arr];
+//  let myArr = [];
 
-function findNthGreatest(arr, n){
- let newArr = [...arr];
- let myArr = [];
+//  for(let i=0;i<n;i++){
+//   let maxElem =  Math.max(...newArr);
+//   let idx = newArr.indexOf(maxElem);
+//   newArr.splice(idx, 1);
+//     myArr.unshift(maxElem)
+//  }
+//  return myArr[0]
+// }
 
- for(let i=0;i<n;i++){
-  let maxElem =  Math.max(...newArr);
-  let idx = newArr.indexOf(maxElem);
-  newArr.splice(idx, 1);
-    myArr.unshift(maxElem)
- }
- return myArr[0]
-}
-
-let arr = [5,4,3,1,2,2,3,3];
-console.log(findNthGreatest(arr,5));
+// let arr = [5,4,3,1,2,2,3,3];
+// console.log(findNthGreatest(arr,5));
 
 // console.log(Math.max(...arr));
+
+//  * *  *  *  *  *
+//  *  *       *  *
+//  *    *  *     *
+//  *  *       *  *
+//  * *  *  *  *  *
+
+// Write a program to print this pattern ?
+
+//  *             *
+//  * *         * *
+//  * * *     * * *
+//  * * * * * * * *
+//  * * *     * * *
+//  * *         * *
+//  *             *
+
+// -> Write a program to print this pattern ?
+
+// function printPattern(n) {
+//   let output = ""
+//   for (let i = 0; i < n / 2; i++) {
+//     for (let j = 0; j <= i; j++) {
+//      output += "* "
+//     }  
+//     for (let k = 0; k < n - 2 * i - 1; k++) {
+//       output +="  ";
+//     }
+ 
+//     for (let l = 0; l <= i; l++) {
+//       // console.log("* ");
+//       output +="* ";
+//     }
+//     console.log(output)
+//   }
+// }
+
+// printPattern(7);
+
+
+
+// Event emitter in node js :-
+
+
+
+
+
