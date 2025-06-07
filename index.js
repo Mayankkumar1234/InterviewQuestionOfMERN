@@ -833,3 +833,29 @@
 // console.log(mergeSort(arr));
 
 
+// function removeElement(nums , val){
+// if(nums.length == 0)  return nums;
+
+
+// }
+// console.log(removeElement([1,2,3,3,2], 3))
+
+
+// [1,2,3,2,4,5]  --> Remove 2 from the array :-
+
+
+// function findLongestStr(stringArr){
+ 
+// }
+
+
+// console.log(findLongestStr(["apple", "banana", "pea"]));
+
+// console.log(findLongestStr(["a", "b", "c"]));
+
+// console.log(findLongestStr(["orange", "cherry", "banana"]))
+
+// console.log(findLongestStr(["", "", ""]))
+
+// console.log(findLongestStr([]))
+
