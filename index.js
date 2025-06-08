@@ -781,12 +781,9 @@
 
 // console.log(arr1.length);
 
-
-
 // let myArr  = new Array(1,2,3,4);
 
 // console.log(myArr)
-
 
 // let arr = [8,4,6,11, 28, 17];
 
@@ -804,7 +801,6 @@
 //       j++;
 //     }
 //    }
-
 
 //    while(i<arr1.length){
 //     combinedArr.push(arr1[i]);
@@ -832,22 +828,17 @@
 
 // console.log(mergeSort(arr));
 
-
 // function removeElement(nums , val){
 // if(nums.length == 0)  return nums;
-
 
 // }
 // console.log(removeElement([1,2,3,3,2], 3))
 
-
 // [1,2,3,2,4,5]  --> Remove 2 from the array :-
 
-
 // function findLongestStr(stringArr){
- 
-// }
 
+// }
 
 // console.log(findLongestStr(["apple", "banana", "pea"]));
 
@@ -859,3 +850,31 @@
 
 // console.log(findLongestStr([]))
 
+// function maxSubarray(nums) {
+//   console.log(nums);
+// }
+
+// maxSubarray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
+
+// let arr = [1,2,3,4,5];
+
+// let filteredNum = arr.filter(ele=> ele =2);
+// console.log(filteredNum) ->
+
+//The expression ele = 2:
+
+// Sets every element temporarily to 2 during that iteration.
+
+// The result of the assignment (2) is truthy in JavaScript.
+
+// So for every element in the array [1, 2, 3, 4, 5]:
+
+// let arr = [1,2,3,4,5];
+
+// let updatedElement = arr.map(ele=> ele = 2);
+// console.log(updatedElement); -> Output : [2,2,2,2,2]
+
+// let arr = [1,2,3,4,5];
+
+// let updatedElement = arr.reduce(ele=> ele = 2);
+// console.log(updatedElement);
